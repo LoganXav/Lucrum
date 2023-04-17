@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lucrum | Financial Planning</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
         <video src="assets/bg-video.mp4" autoplay loop muted></video>
         <div class="hero-gradient"></div>
         <div class="hero-content">
-            <div class="navbar">
+            <nav class="navbar">
                 <div class="navbar-left">
-                    <div id="btn" class="navbar-logo">Logo</div>
+                    <div class="navbar-logo"><i class="fa-solid fa-money-bill fa-xl"></i>  LUCRUM</div>
                     <li><a id="chevron1" href="#">Overview <i class="fa-solid fa-chevron-down fa-2xs"></i></a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Services</a></li>
@@ -30,7 +30,7 @@
                     <div class="modal-bg">
                         <div class="nav-menu">
                             <div class="nav--menu-logo">
-                                <div class="navbar-logo">Logo</div>
+                                <div class="navbar-logo"><i class="fa-solid fa-money-bill fa-xl"></i> LUCRUM</div>
                                 <h2 id="close-nav"><i class="fa-solid fa-xmark"></i></h2>
                             </div>
                             <p id="chevron2-close">BACK</p>
@@ -46,6 +46,10 @@
                                 <span><a href="#">Pages</a></span>
                                 <span><a href="#">Blog</a></span>
                             </div>
+                            <div class="nav--menu-buttons">
+                                <button class="navbar--button-light"><i class="fa-solid fa-shield-halved"></i> Log in</button>
+                                <button class="navbar--button-dark">Sign Up</button>
+                            </div>
                         </div>
                         <div id="modal" class="navbar-modal">
                             <div class="modal--container">
@@ -58,7 +62,7 @@
                                     <div class="modal--bottom-1">
                                         <i class="fa-solid fa-building-columns fa-2xl bank"></i>
                                         <div>
-                                            <li><a href="">Platform Overview</a></li>
+                                            <li><a href="#">Platform Overview</a></li>
                                             <p>We offer comprehensive financial planning services for lifetime.</p>
                                         </div>
                                     </div>
@@ -66,7 +70,7 @@
                                         <div class="modal--bottom-services">
                                             <i class="fa-sharp fa-solid fa-person-cane fa-2xl"></i>
                                             <div>
-                                                <li><a href="">Retirement Planning</a></li>
+                                                <li><a href="#">Retirement Planning</a></li>
                                                 <p>We'll help you create a retirement plan that meets your financial
                                                     needs.
                                                 </p>
@@ -75,7 +79,7 @@
                                         <div class="modal--bottom-services">
                                             <i class="fa-solid fa-regular fa-money-bill-trend-up fa-xl"></i>
                                             <div>
-                                                <li><a href="">Investment Management</a></li>
+                                                <li><a href="#">Investment Management</a></li>
                                                 <p>Our team of investment experts will help you make smart investment
                                                     decisions to grow.</p>
                                             </div>
@@ -85,7 +89,7 @@
                                         <div class="modal--bottom-services">
                                             <i class="fa-solid fa-calculator fa-xl"></i>
                                             <div>
-                                                <li><a href="">Tax Planning</a></li>
+                                                <li><a href="#">Tax Planning</a></li>
                                                 <p>We'll help you minimize your tax liability and keep more of your
                                                     hard-earned money.</p>
                                             </div>
@@ -93,7 +97,7 @@
                                         <div class="modal--bottom-services">
                                             <i class="fa-solid fa-book fa-xl"></i>
                                             <div>
-                                                <li><a href="">Financial Education</a></li>
+                                                <li><a href="#">Financial Education</a></li>
                                                 <p>We offer educational resources and workshops to help you improve your
                                                     financial literacy.</p>
                                             </div>
@@ -109,16 +113,16 @@
                     <span class="hamburger-icon"><i class="fa-solid fa-bars fa-lg"></i></span>
                     <button class="navbar--button-dark">Sign Up</button>
                 </div>
-            </div>
-            <div class="hero-info">
-                <div class="hero--info-top">
+            </nav>
+            <section class="hero-info">
+                <header class="hero--info-top">
                     <h2 class="hero--info-header">Maximize your income and build lasting wealth</h2>
                     <div class="hero--info-bg"></div>
-                    <p>At (logo), we understand the importance of financial planning for individuals and businesses
+                    <p>At Lucrum, we understand the importance of financial planning for individuals and businesses
                         alike
                     </p>
-                </div>
-                <div class="hero--info-bottom">
+                </header>
+                <section class="hero--info-bottom">
                     <div class="hero-buttons">
                         <button class="hero--button-dark">Get Started <span><i
                                     class="fa-solid fa-arrow-right"></i></span></button>
@@ -126,13 +130,29 @@
                     </div>
                     <hr>
                     <div class="hero--info-users">
-                        <h2>50M+</h2>
+                        <h2 id="count">0M+</h2>
                         <span>Active users around the world</span>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
         </div>
     </div>
+    <section class="about-section">
+        <p>About Lucrum</p>
+        <div class="about-details">
+            <h1>Lucrum was developed by a team of experienced financial planners and technology experts.</h1>
+            <p>Our services include comprehensive financial planning, investment management, retirement planning, tax planning, and more. We provide customized solutions that cater to your unique needs and financial objectives.</p>
+        </div>
+        <div class="about-partners">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+    </section>
     <script src="script.js"></script>
 </body>
 

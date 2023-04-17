@@ -4,9 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 /* ==============  Navbar & Hero Section (starts here)  ================= */
 .hero-container {
-  height: 100vh;
+  height: 110vh;
   max-width: 100vw;
   position: relative;
 }
@@ -16,7 +19,7 @@
   top: 0;
   left: 25%;
   width: 75%;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   z-index: -10;
 }
@@ -24,7 +27,7 @@
 @media screen and (max-width: 767px) {
   .hero-container,
   .hero-container video {
-    height: 65vh;
+    height: 70vh;
   }
 }
 
@@ -70,6 +73,9 @@
   gap: 2rem;
   justify-content: space-between;
 }
+.navbar-logo{
+  font-weight: 700;
+}
 .navbar-left li {
   list-style: none;
 }
@@ -81,6 +87,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 .navbar-right span {
   display: none;
@@ -105,10 +112,13 @@
   align-items: center;
   color: black;
   gap: 0.5rem;
-  background-color: transparent;
   font-size: 0.7rem;
+  background-color: transparent;
+  box-shadow: 3px -4px 31px -10px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 3px -4px 31px -10px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 3px -4px 31px -10px rgba(0, 0, 0, 0.18);
 }
-.hamburger-icon{
+.hamburger-icon {
   cursor: pointer;
 }
 
@@ -211,6 +221,7 @@
 @media screen and (max-width: 767px) {
   .modal-bg {
     opacity: 0;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -218,7 +229,8 @@
   .modal-bg.active {
     width: 100%;
     opacity: 1;
-    height: 100vh;
+    z-index: 10;
+    height: 110vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -226,12 +238,12 @@
     overflow: hidden;
   }
 }
-#close-nav{
+#close-nav {
   cursor: pointer;
-  transition: scale 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-#close-nav:hover{
-  transform: scale(1.2)
+#close-nav:hover {
+  transform: scale(1.1);
 }
 .nav-menu {
   display: none;
@@ -254,6 +266,7 @@
     transition: all 0.8s ease-in-out;
     margin: 0 3.5rem;
     font-size: 0.6rem;
+    cursor: pointer;
   }
 }
 .nav--menu-logo {
@@ -277,26 +290,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
+.nav--menu-buttons {
+  display: flex;
+  align-items: center;
+  margin: 40vh 2.5rem;
+  gap: 0.5rem;
+}
 @media screen and (max-width: 767px) {
   .navbar-modal {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(100%);
     top: 15.5vh;
   }
 }
+
 @media screen and (max-width: 767px) {
   .navbar-modal.active {
     transform: translateX(0);
     left: 0vw;
-    
+    opacity: 1;
   }
 }
 @media screen and (max-width: 590px) {
   .navbar-modal {
     opacity: 1;
-    /* left: -5vw; */
     transform: translateX(100%);
   }
 }
@@ -510,3 +530,48 @@ hr {
 }
 
 /* =============  Navbar & Hero Section (ends here)  ================= */
+/* ==============  About Section (starts here)   ============== */
+.about-section{
+  display: flex;
+  flex-direction: column;
+  padding: 22vh 13vw;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(41, 46, 51);
+  transform: translateY(-7%);
+}
+.about-details{
+  display: flex;
+  gap: 1vw;
+}
+.about-details h1{
+  font-size: 2rem;
+  flex: 2;
+}
+.about-details p{
+  font-size: 0.9rem;
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .about-section{
+    padding: 10vh 6vw;
+    gap: 1.5vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-details{
+    flex-direction: column;
+    gap: 6vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-details h1 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-details p {
+    font-size: 0.7rem;
+  }
+}

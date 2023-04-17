@@ -6,6 +6,7 @@ const navMenu = document.querySelector('.nav-menu')
 const chevron1 = document.getElementById('chevron1')
 const chevron2 = document.getElementById('chevron2')
 const chevron2Close = document.getElementById('chevron2-close')
+const countElement = document.getElementById("count");
 
 chevron1.addEventListener("click", (e) => {
     modal.classList.toggle("active")
@@ -26,3 +27,14 @@ closeIcon.addEventListener("click", () => {
     modalBg.classList.toggle("active")
     navMenu.classList.toggle("active")
 })
+
+let count = parseInt(countElement.innerText);
+function countUp() {
+    console.log(count, "count start")
+    count++;
+    countElement.innerText = count + "M+";
+    if (count < 50) {
+        setTimeout(countUp, 20);
+    }
+}
+countUp();
